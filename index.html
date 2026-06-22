@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Calculator Pro</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>🧮 Smart Calculator Pro</h1>
+
+<div class="header-controls">
+<button id="themeBtn">🌙 Theme</button>
+<button id="voiceBtn">🎤 Voice</button>
+</div>
+</header>
+
+<div class="container">
+
+<div class="calculator">
+
+<input type="text" id="display" readonly>
+
+<div class="memory">
+<button onclick="memoryAdd()">M+</button>
+<button onclick="memorySub()">M-</button>
+<button onclick="memoryRecall()">MR</button>
+<button onclick="memoryClear()">MC</button>
+</div>
+
+<div class="buttons">
+
+<button onclick="clearDisplay()">AC</button>
+<button onclick="deleteLast()">DEL</button>
+<button onclick="append('%')">%</button>
+<button onclick="append('/')">÷</button>
+
+<button onclick="append('7')">7</button>
+<button onclick="append('8')">8</button>
+<button onclick="append('9')">9</button>
+<button onclick="append('*')">×</button>
+
+<button onclick="append('4')">4</button>
+<button onclick="append('5')">5</button>
+<button onclick="append('6')">6</button>
+<button onclick="append('-')">−</button>
+
+<button onclick="append('1')">1</button>
+<button onclick="append('2')">2</button>
+<button onclick="append('3')">3</button>
+<button onclick="append('+')">+</button>
+
+<button class="zero-btn" onclick="append('0')">0</button>
+<button onclick="append('.')">.</button>
+<button onclick="calculate()">=</button>
+
+<button onclick="sqrt()">√</button>
+<button onclick="square()">x²</button>
+<button onclick="cube()">x³</button>
+<button onclick="append(Math.PI)">π</button>
+
+</div>
+
+</div>
+
+<div class="history">
+
+<h2>History</h2>
+
+<ul id="historyList"></ul>
+
+<button onclick="clearHistory()">Clear</button>
+<button onclick="downloadTXT()">TXT</button>
+<button onclick="downloadPDF()">PDF</button>
+
+</div>
+
+</div>
+
+<section class="tools">
+
+<div class="tool">
+
+<h2>Age Calculator</h2>
+
+<input type="date" id="dob">
+<button onclick="calculateAge()">Calculate</button>
+
+<p id="ageResult"></p>
+
+</div>
+
+<div class="tool">
+
+<h2>BMI Calculator</h2>
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+<input type="number" id="height" placeholder="Height (cm)">
+<button onclick="calculateBMI()">Calculate</button>
+
+<p id="bmiResult"></p>
+
+</div>
+
+<div class="tool">
+
+<h2>EMI Calculator</h2>
+
+<input type="number" id="loan" placeholder="Loan Amount">
+<input type="number" id="rate" placeholder="Interest %">
+<input type="number" id="years" placeholder="Years">
+
+<button onclick="calculateEMI()">Calculate</button>
+
+<p id="emiResult"></p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
