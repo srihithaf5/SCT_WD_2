@@ -28,3 +28,6 @@ A professional calculator web application built using HTML, CSS and JavaScript.
 ## Run
 
 Open index.html in browser.
+
+<img width="1882" height="1063" alt="image" src="https://github.com/user-attachments/assets/3ef0d34b-5834-4fee-a9c2-8be162268945" />
+
