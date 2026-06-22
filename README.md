@@ -30,4 +30,5 @@ A professional calculator web application built using HTML, CSS and JavaScript.
 Open index.html in browser.
 
 <img width="1882" height="1063" alt="image" src="https://github.com/user-attachments/assets/3ef0d34b-5834-4fee-a9c2-8be162268945" />
+<img width="1890" height="1097" alt="image" src="https://github.com/user-attachments/assets/ba84ffb1-77ef-4a00-a53d-c66394919614" />
 
